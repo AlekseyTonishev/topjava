@@ -1,0 +1,11 @@
+tr.redfont {
+    color: red;
+}
+
+tr.greenfont {
+    color: green;
+}
+
+td {
+    text-align: center;
+}
