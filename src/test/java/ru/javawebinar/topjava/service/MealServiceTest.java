@@ -42,7 +42,6 @@ public class MealServiceTest {
     private static final StringBuilder results = new StringBuilder();
 
     @Rule
-    // http://stackoverflow.com/questions/14892125/what-is-the-best-practice-to-determine-the-execution-time-of-the-bussiness-relev
     public final Stopwatch stopwatch = new Stopwatch() {
         @Override
         protected void finished(long nanos, Description description) {
@@ -57,11 +56,11 @@ public class MealServiceTest {
 
     @AfterClass
     public static void printResult() {
-        log.info("\n---------------------------------" +
-                "\nTest                 Duration, ms" +
-                "\n---------------------------------" +
+        log.info("\n----------------------" +
+                "\nTest           Duration, ms" +
+                "\n-----------------------" +
                 results +
-                "\n---------------------------------");
+                "\n-----------------------");
     }
 
     @Test
